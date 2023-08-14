@@ -1,0 +1,102 @@
+img{
+    border-radius: 50%;
+    position: relative;
+    left: 100px;
+    top: 30px;
+}
+.hr1 {
+    position: relative;
+    border: 0;
+    border-top: 2px solid #CCC;
+    top: 50px;
+  }
+
+.name{
+    position: absolute;
+    left: 500px;
+    top: 50px;
+}
+
+.descricao{
+    position: absolute;
+    left: 500px;
+    top: 110px;
+}
+.date{
+    position: absolute;
+    left: 500px;
+    top: 135px;
+}
+.email{
+    position: absolute;
+    left: 500px;
+    top: 162px;
+}
+.telefone{
+    position: absolute;
+    left: 500px;
+    top: 190px;
+}
+
+
+.memorial{
+    position: absolute;
+    left: 500px;
+    top: 230px;
+}
+
+.memoriallink{
+    position: absolute;
+    left: 590px;
+    top: 252px;
+}
+.formacao{
+    position: absolute;
+    left: 50px;
+    top: 320px;
+}
+
+.listaFormacao{
+    position: absolute;
+    left: 50px;
+    top: 350px;
+}
+.hr2 {
+   
+    border: 0;
+    border-top: 2px solid #CCC;
+    margin-top: 240px; 
+    width: 100%; 
+  }
+
+  .habilidade{
+    position: absolute;
+    left: 50px;
+    top: 500px;
+}
+
+.listahab{
+    position: absolute;
+    left: 50px;
+    top: 530px;
+}
+
+.hr3{
+   
+    border: 0;
+    border-top: 2px solid #CCC;
+    margin-top: 200px; 
+    width: 100%; 
+  }
+
+  .habilidadePessoal{
+    position: absolute;
+    left: 50px;
+    top: 700px;
+}
+
+.listahabPessoal{
+    position: absolute;
+    left: 50px;
+    top: 730px;
+}

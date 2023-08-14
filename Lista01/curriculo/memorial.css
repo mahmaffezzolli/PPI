@@ -1,0 +1,102 @@
+.hr1 {
+    position: absolute;
+    top: 30px;
+}
+
+.name {
+    position: absolute;
+    top: 90px;
+}
+
+.listaDescricao {
+    position: relative;
+    list-style-type: none;
+    padding-left: 0;
+    margin-top: 170px;
+}
+
+.descricao-item {
+    display: flex;
+    align-items: baseline;
+}
+
+.titulo-introducao {
+    margin-right: 10px;
+    margin-bottom: 10px; 
+}
+
+.descricao {
+    margin-top: 10px; 
+}
+
+
+.biografia-item {
+    display: flex;
+    align-items: baseline;
+}
+
+.Biografia {
+    margin-right: 20px;
+}
+
+.biografia-texto {
+    margin-top: 10px; 
+    margin-right: 20px;
+}
+
+
+
+.conquista-item {
+    display: flex;
+    align-items: baseline;
+}
+
+.conquista {
+    margin-right: 20px;
+}
+
+.conquista-texto {
+    margin-top: 10px; 
+    margin-right: 20px;
+}
+
+
+
+.interesses-item {
+    display: flex;
+    align-items: baseline;
+}
+
+.interesses {
+    margin-right: 20px;
+}
+
+.interesses-texto {
+    margin-top: 10px; 
+    margin-right: 20px;
+}
+
+
+
+.formacao-item {
+    display: flex;
+    align-items: baseline;
+}
+
+.formacao {
+    margin-right: 20px;
+}
+
+.formacao-texto {
+    margin-top: 10px; 
+    margin-right: 20px;
+}
+
+img{
+    border-radius: 50%;
+    position: relative;
+    left: 30px;
+    top: 30px;
+}
+
+
