@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tipos input</title>
+</head>
+<body>
+
+    <p>Input Text- criar campos de textos básicos- maxlength: define uma valor máximo, minlength: define valor mínimo, size: define quantos caracteres o campo de entrada deve ter</p> 
+    <input type="text" name="txtInput" id="textInput">
+    
+
+    <p>Input password- cria um campo de senha onde o texto fica obscuro- maxlength: define uma valor máximo, minlength: define valor mínimo  </p>
+    <input type="password" id="pass" name="password" minlength="8" required />
+
+
+    <p>Input checkbox - caixas que são marcadas quando escolhe uma opção- checked: define uma caixa para ser marcada como padrão  </p>
+    <fieldset>
+        <legend>Choose your monster's features:</legend>
+        <div>
+          <input type="checkbox" id="scales" name="scales" checked />
+          <label for="scales">Scales</label>
+        </div>
+        <div>
+          <input type="checkbox" id="horns" name="horns" />
+          <label for="horns">Horns</label>
+        </div>
+      </fieldset>
+
+
+
+      <p>Input botão- são botões simples- value: define o texto que aparecerá no seu botão </p>
+      <input type="button" value="Meu Botão">
+
+
+      <p>Input Date- define uma caixa de texto onde é possivel o usuário inserir uma data- min: data mínimo, max: data máximo, value: valor padrão </p>
+      <input type="date" name="trip-start" id="start" value="2018-07-22" min="2018-01-01" max="2023-02">
+
+      <p>Input Radio- caixas que são marcadas quando escolhe uma opção podendo ser marcada somente 1 opção</p>
+
+</body>
+</html>

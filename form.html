@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms</title>
+</head>
+<body>
+    
+    <form action="" method="post"> 
+         <fieldset>
+            <legend>Dados Pessoais</legend>
+        <label for="txtNome">Nome</label>
+        <input type="text" name="name" id="txtNome" value="Name" required minlength="4" maxlength="8" size="10">
+        <input type="submit">
+        <br>
+        <label for="email">email</label>
+        <input type="text" name="txtemail" id="email" required>
+        <input type="submit">
+
+      </fieldset>
+         <br>
+    </form>
+    <input type="button" value="Meu Botão">
+    <br>
+    <fieldset>
+        <legend>Chose</legend>
+    <input type="checkbox" name="scales" id="scales" checked >
+    <label for="scales"></label>
+    <input type="checkbox" name="horns" id="horns" checked >
+    <label for="horns"></label>
+ </fieldset>
+
+    <br>
+    <input type="date" name="trip-start" id="start" value="2018-07-22" min="2018-01-01" max="2023-02">
+    <br>
+
+    <label for="meeting">Chose a time</label>
+    <input type="datetime-local" name="meeting" id="meeting" value="2018-06-12T19:30" min="2018-01-01" max="2023-02">
+    <br>
+
+    <label for="email">Entre com email</label>
+    <input type="email" name="email" id="email" pattern=".+@servidor\.com" size="30" required>
+    <br>
+
+    <label for="avatar">Escolha uma imagem</label>
+    <input type="file" name="avatar " id="avatar" accept="image/png, image/jepg">
+    <br>
+    <label for="avatar">Escolha uma imagem</label>
+    <input type="hidden" name="avatar " id="avatar" accept="image/png, image/jepg">
+    <br>
+
+
+
+    <label for="avatar">Escolha uma imagem</label>
+    <input type="text" name="userId " id="userId">
+ 
+    <input type="image" id="image" src="" alt="">
+
+    <br>
+
+    <label for="number">Number</label>
+    <input type="number" name="number" id="number" min="10" max="100">
+    <br>
+
+    <label for="password">password</label>
+    <input type="password" name="pass" id="password" minlength="8" required>
+    <br>
+
+    <label for="Id">user Id</label>
+    <input type="text" name="Id" id="Id">
+    <input type="reset" value="Reset">
+
+    <br>
+
+    <input type="range" name="volume" id="volume" min="0" max="11">
+    <label for="volume"> Volume</label>
+    <br>
+
+
+    <label for="site">Search</label>
+    <input type="search" name="site" id="site">
+    <button>Search</button>
+
+    <br>
+
+    <input type="submit" value="Send request">
+
+    <br>
+
+    <label for="phone"></label>
+    <input type="tel" name="phone" id="phone" required>
+    <input type="tel" pattern="\(\d(2)\) \d(4) \d(4)">
+
+    <br>
+
+    <label for="url">Entre com o url</label>
+    <input type="url" name="" id="url" placeholder="" pattern="https://." size="30" required>
+
+    <br>
+
+    <label for="week"> Week</label>
+    <input type="week" name="" id="week" min="2018-W18" max="2018-W26" required>
+
+    <br>
+
+  <input list="browers" />
+  <datalist>
+   <option value="Chrome"></option>
+   <option value="Chrome"></option>
+   <option value="Chrome"></option>
+
+  </datalist>
+  
+</body>
+</html> 
