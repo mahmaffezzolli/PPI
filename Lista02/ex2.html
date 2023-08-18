@@ -1,44 +1,182 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tipos input</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tipos input</title>
 </head>
+
 <body>
 
-    <p>Input Text- criar campos de textos básicos- maxlength: define uma valor máximo, minlength: define valor mínimo, size: define quantos caracteres o campo de entrada deve ter</p> 
-    <input type="text" name="txtInput" id="textInput">
-    
+  <p>Input Text- criar campos de textos básicos- maxlength: define uma valor máximo, minlength: define valor mínimo,
+    size: define quantos caracteres o campo de entrada deve ter</p>
+  <input type="text" name="txtInput" id="textInput">
 
-    <p>Input password- cria um campo de senha onde o texto fica obscuro- maxlength: define uma valor máximo, minlength: define valor mínimo  </p>
-    <input type="password" id="pass" name="password" minlength="8" required />
+  <br>
+  <p>Input password- cria um campo de senha onde o texto fica obscuro- maxlength: define uma valor máximo, minlength:
+    define valor mínimo </p>
+  <input type="password" id="pass" name="password" minlength="8" required />
+  <br>
+
+  <p>Input checkbox - Cria uma caixa de seleção que permite aos usuários escolher uma ou mais opções.o- checked: define
+    uma caixa para ser marcada como padrão </p>
+  <fieldset>
+    <legend>Choose your monster's features:</legend>
+    <div>
+      <input type="checkbox" id="scales" name="scales" checked />
+      <label for="scales">Scales</label>
+    </div>
+    <div>
+      <input type="checkbox" id="horns" name="horns" />
+      <label for="horns">Horns</label>
+    </div>
+  </fieldset>
+  <br>
 
 
-    <p>Input checkbox - caixas que são marcadas quando escolhe uma opção- checked: define uma caixa para ser marcada como padrão  </p>
-    <fieldset>
-        <legend>Choose your monster's features:</legend>
-        <div>
-          <input type="checkbox" id="scales" name="scales" checked />
-          <label for="scales">Scales</label>
-        </div>
-        <div>
-          <input type="checkbox" id="horns" name="horns" />
-          <label for="horns">Horns</label>
-        </div>
-      </fieldset>
+
+  <p>Input botão- são botões simples- value: define o texto que aparecerá no seu botão </p>
+  <input type="button" value="Meu Botão">
+  <br>
 
 
+  <p>Input Date- define uma caixa de texto onde é possivel o usuário inserir uma data- min: data mínimo, max: data
+    máximo, value: valor padrão </p>
+  <input type="date" name="trip-start" id="start" value="2018-07-22" min="2018-01-01" max="2023-02">
+  <br>
 
-      <p>Input botão- são botões simples- value: define o texto que aparecerá no seu botão </p>
-      <input type="button" value="Meu Botão">
+  <p>Input Radio- Cria um botão de opção para seleção única em um grupo de opções. - value: Define o valor associado à
+    opção de rádio, checked: Marca o botão de opção como selecionado por padrão. </p>
+  <fieldset>
+    <legend>Select a maintenance drone:</legend>
+
+    <div>
+      <input type="radio" id="huey" name="drone" value="huey" checked />
+      <label for="huey">Huey</label>
+    </div>
+
+    <div>
+      <input type="radio" id="dewey" name="drone" value="dewey" />
+      <label for="dewey">Dewey</label>
+    </div>
+
+    <div>
+      <input type="radio" id="louie" name="drone" value="louie" />
+      <label for="louie">Louie</label>
+    </div>
+  </fieldset>
+  <br>
+
+  <p>Input Color: Cria um seletor de cor que permite aos usuários escolher uma cor.- value: Define o valor inicial da
+    cor, que é exibido como a cor selecionada,</p>
+
+  <div>
+    <input type="color" id="head" name="head" value="#e66465" />
+    <label for="head">Cor</label>
+  </div>
+
+  <br>
+
+  <p>Input Email: Cria uma caixa de texto de entrada para endereços de e-mail, com validação de formato, - required:
+    Indica que a entrada de email é obrigatória antes do envio do formulário.</p>
+  <input type="email" id="email" pattern=".+@globex\.com" size="30" required />
+  <br>
+
+  <p>Input File:Cria um botão de seleção de arquivo que permite aos usuários escolhers arquivos do dispositivo.- accept:
+    Define os tipos de arquivos aceitos para a entrada,</p>
+  <input type="file" id="avatar" name="avatar" accept="image/png, image/jpeg" />
+  <br>
+
+  <p>Input Hidden: Cria um campo oculto que armazena dados que não são visíveis para os usuários.- value: Define o valor
+    oculto que será enviado quando o formulário for submetido </p>
+  <p>Campo oculto</p> <input type="hidden" name="id" value="123">
+  <br>
 
 
-      <p>Input Date- define uma caixa de texto onde é possivel o usuário inserir uma data- min: data mínimo, max: data máximo, value: valor padrão </p>
-      <input type="date" name="trip-start" id="start" value="2018-07-22" min="2018-01-01" max="2023-02">
+  <p>Input Image: Cria uma imagem clicável que pode ser usada como um botão. - type: Define o tipo de entrada como
+    "image", value: Define o valor </p>
+  <input type="image" id="image" alt="Login" src="/media/examples/login-button.png" />
+  <br>
 
-      <p>Input Radio- caixas que são marcadas quando escolhe uma opção podendo ser marcada somente 1 opção</p>
+  <p>Input Number: Cria uma caixa de texto de entrada para números, com restrições numéricas e botões de
+    aumento/diminuição.- min e max: Especificam os valores mínimo e máximo permitidos para a entrada numérica.</p>
+  <input type="number" id="tentacles" name="tentacles" min="10" max="100" />
+  <br>
+
+  <p>Input datetime-local: permitem ao usuário inserir facilmente uma data e uma hora- value: define o valor alor da
+    data inserida na entrada </p>
+  <input type="datetime-local" id="meeting-time" name="meeting-time" value="2018-06-12T19:30" min="2018-06-07T00:00"
+    max="2018-06-14T00:00" />
+  <br>
+
+
+  <p>Input Reset:elementos do tipo resetsão renderizados como botões com um clickmanipulador de eventos padrão que
+    redefine todas as entradas no formulário para seus valores iniciais. - value:string que é usada como rótulo do botão
+  </p>
+  <form>
+    <div class="controls">
+      <label for="id">User ID:</label>
+      <input type="text" id="id" name="id" />
+
+      <input type="reset" value="Reset" />
+      <input type="submit" value="Submit" />
+    </div>
+  </form>
+
+  <br>
+
+  <p>Input Range:elementos do tipo rangepermitem que o usuário especifique um valor numérico que não deve ser menor que
+    um determinado valor e não mais que outro valor fornecido - min,max: mais baixo e maior valor no intervalor de
+    valores permitidos </p>
+  <div>
+    <input type="range" id="volume" name="volume" min="0" max="11" />
+    <label for="volume">Volume</label>
+  </div>
+  <br>
+
+  <div>
+    <input type="range" id="cowbell" name="cowbell" min="0" max="100" value="90" step="10" />
+    <label for="cowbell">Cowbell</label>
+  </div>
+
+  <br>
+
+  <p>Input Search: são campos de texto projetados para o usuário inserir consultas de pesquisa. - name: define o nome
+  </p>
+  <label for="site-search">Search the site:</label>
+  <input type="search" id="site-search" name="q" />
+
+  <button>Search</button>
+  <br>
+
+
+  <p>Input Tel: são usados ​​para permitir que o usuário insira e edite um número de telefone.- required: Indica que a
+    entrada é obrigatória, pattern: especifica um padrão (expressão regular) que o valor inserido deve corresponder.
+  </p>
+
+  <label for="phone">Enter your phone number:</label>
+  <input type="tel" id="phone" name="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required />
+  <small>Format: 123-456-7890</small>
+  <br>
+
+  <p>Input Url: usados ​​para permitir que o usuário insira e edite uma URL. - placeholder: é usado para fornecer um
+    texto temporário dentro de um campo, pattern: especifica um padrão</p>
+  <form>
+    <label for="url">Enter an https:// URL:</label>
+    <input type="url" name="url" id="url" placeholder="https://example.com" pattern="https://.*" size="30" required />
+  </form>
+
+  <br>
+
+  <p>Input Week: criam campos de entrada que permitem a entrada fácil de um ano mais o número da semana ISO 8601 durante
+    esse ano (ou seja, semana 1 a 52 ou 53 ). - min,max: primeiro ano e semana para aceitar, número de ano e semana mais
+    recente </p>
+  <label for="week">Choose a week in May or June:</label>
+  <input type="week" name="week" id="camp-week" min="2018-W18" max="2018-W26" required />
+  <br>
 
 </body>
+
 </html>

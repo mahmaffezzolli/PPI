@@ -1,0 +1,7 @@
+O que diferencia um <button> de uma <input type=”button”> de um <input type=”submit”>
+
+    A tag <button> é uma tag de botão genérica que pode conter qualquer conteúdo, como texto, imagens ou até mesmo outros elementos HTML. Ela é altamente flexível e pode ser estilizada facilmente usando CSS. Pode ser usada para qualquer tipo de interação que você queira implementar com um botão, como abrir uma janela modal, executar um script, entre outras ações.
+    
+    A tag <input type="button"> cria um botão clicável. Geralmente, ele é usado para acionar scripts ou interações específicas no cliente. Não pode conter outros elementos, apenas texto e atributos. É mais comumente usado quando você deseja executar um código JavaScript ao clicar no botão.
+
+    A tag <input type="submit"> também cria um botão clicável, mas é usada especificamente dentro de um formulário para enviar o formulário para processamento no servidor. Quando o usuário clica neste botão dentro de um formulário, ele envia os dados do formulário para o local especificado no atributo action do formulário. Isso é usado para enviar dados e executar ações no lado do servidor.

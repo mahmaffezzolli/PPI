@@ -1,0 +1,7 @@
+Qual a tag para criação de links documentos HTML internos e externos? Como podemos utilizar para referenciar um documento na web?
+
+
+A tag usada para criar links em documentos HTML é a <a>. Essa tag é usada tanto para criar links para documentos internos (outras páginas do mesmo site) quanto para documentos externos (outros sites).
+
+Para criar um link externo para um documento na web, pode usar um URL completo ou relativo. Por exemplo, para criar um link para a página inicial do Google:
+<a href="https://www.google.com/">Ir para o Google</a>
